@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-box">
+          <input type="text" id="password" readonly placeholder="Your password will appear here">
+          <a class="copy-btn" title="Copy Password">
+            <img src="—Pngtree—vector copy icon_4013516.png" alt="Copy">
+          </a>
+        </div>
+        <div class="settings">
+          <div class="setting">
+            <label for="length">Character Length</label>
+            <input type="range" class="length" id="length" min="4" max="20" value="8">
+            <span id="length-value">8</span>
+          </div>
+          <div class="setting">
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Include Uppercase Letters</label>
+          </div>
+          <div class="setting">
+            <input type="checkbox" id="lowercase" checked>
+            <label for="lowercase">Include Lowercase Letters</label>
+          </div>
+          <div class="setting">
+            <input type="checkbox" id="number">
+            <label for="number">Include Numbers</label>
+          </div>
+          <div class="setting">
+            <input type="checkbox" id="symbol">
+            <label for="symbol">Include Symbols</label>
+          </div>
+          <button class="generate-btn">GENERATE →</button>
+        </div>
+    </div>
+    </div>
+    <script src="mine.js"></script>
+</body>
+</html>
